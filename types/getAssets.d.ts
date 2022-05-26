@@ -1,1 +1,1 @@
-export declare const getAssets: (manifestPath: string, entrypoint?: string | undefined) => Promise<string[]>;
+export declare const getAssets: (manifestPath: string, entrypoint?: string) => Promise<string[]>;
