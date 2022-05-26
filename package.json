@@ -1,0 +1,59 @@
+{
+  "name": "@bipboys/webpack-stats-plugin",
+  "version": "0.3.5",
+  "description": "Stats resolver function for Webpack",
+  "keywords": [
+    "plugin",
+    "resolver",
+    "webpack",
+    "assets",
+    "build",
+    "typescript",
+    "react"
+  ],
+  "homepage": "https://github.com/bipboys/webpack-stats-plugin.git#readme",
+  "bugs": {
+    "url": "https://github.com/bipboys/webpack-stats-plugin.git/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bipboys/webpack-stats-plugin.git"
+  },
+  "license": "MIT",
+  "author": "Bipboys Dev Team",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./lib/index.js",
+      "require": "./lib/index.js"
+    }
+  },
+  "main": "lib/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "lib/*",
+    "types/*",
+    "!*.tsbuildinfo",
+    "index.js",
+    "index.d.ts"
+  ],
+  "scripts": {
+    "build": "heft build --clean"
+  },
+  "dependencies": {
+    "jsonfile": "^6.1.0",
+    "tslib": "^2.4.0"
+  },
+  "devDependencies": {
+    "@rushstack/heft": "^0.45.5",
+    "@types/jsonfile": "^6.1.0",
+    "@types/node": "^17.0.35",
+    "@types/react": "^18.0.9",
+    "@types/webpack-stats-plugin": "^0.3.2",
+    "typescript": "^4.7.2"
+  },
+  "peerDependencies": {
+    "react": ">=18.1.0",
+    "react-dom": ">=18.1.0"
+  }
+}
