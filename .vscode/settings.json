@@ -43,14 +43,22 @@
     "**/dist": true,
     "**/dist-storybook": true,
     "**/*.scss.ts": true,
-    "**/temp": true
+    "**/temp": true,
+    "**/.yarn": true,
+    "**/.pnp.*": true
   },
-  "editor.rulers": [80],
-  "eslint.workingDirectories": [{"mode": "auto"}], // infer working directory based on .eslintrc/package.json location
+  "editor.rulers": [
+    80
+  ],
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ], // infer working directory based on .eslintrc/package.json location
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": false,
   "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis": false,
   "typescript.preferences.quoteStyle": "single",
-  "typescript.tsdk": "/usr/lib/node_modules/typescript/lib",
+  "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "files.associations": {
     "**/*.json.hbs": "jsonc"
   },
@@ -71,5 +79,6 @@
   },
   "[handlebars]": {
     "editor.formatOnSave": false
-  }
+  },
+  "typescript.enablePromptUseWorkspaceTsdk": true
 }
