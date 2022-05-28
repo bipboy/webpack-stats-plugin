@@ -40,12 +40,3 @@ import {getScripts} from '@bipboys/webpack-stats-plugin';
 // Get Scripts and Links from stats.json
 const {scriptsAssets, stylesAssets} = await getScripts(manifest, assetName);
 ```
-
-### Push scriptsAssets or(and) stylesAssets to Html where will they be like:
-
-```tsx
-<script crossorigin="anonymous" src="/main.js" type="text/javascript"></script>
-
-// Don't forget push "stylesAssets" to head of Html
-<link rel="stylesheet" type="text/css" crossorigin="anonymous" href="/main.css">
-```
