@@ -1,6 +1,6 @@
 {
   "name": "@bipboys/webpack-stats-plugin",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Stats resolver function for Webpack",
   "keywords": [
     "plugin",
