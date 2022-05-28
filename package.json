@@ -45,7 +45,6 @@
   },
   "dependencies": {
     "jsonfile": "^6.1.0",
-    "react": "^17.0.2",
     "tslib": "^2.4.0"
   },
   "devDependencies": {
