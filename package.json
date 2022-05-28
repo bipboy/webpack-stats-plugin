@@ -1,6 +1,6 @@
 {
   "name": "@bipboys/webpack-stats-plugin",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "description": "Stats resolver function for Webpack",
   "keywords": [
     "plugin",
@@ -38,22 +38,22 @@
     "index.d.ts"
   ],
   "scripts": {
-    "build": "heft build --clean"
+    "build": "yarn run build:clean && swc ./src -d lib && yarn run build:types",
+    "build:clean": "rimraf ./lib && mkdir lib",
+    "build:types": "tsc -p tsconfig.json",
+    "clean": "rimraf ./node_modules && yarn run build:clean"
   },
   "dependencies": {
     "jsonfile": "^6.1.0",
     "tslib": "^2.4.0"
   },
   "devDependencies": {
-    "@rushstack/heft": "^0.45.5",
+    "@swc/cli": "^0.1.57",
+    "@swc/core": "^1.2.194",
     "@types/jsonfile": "^6.1.0",
     "@types/node": "^17.0.35",
-    "@types/react": "^18.0.9",
-    "@types/webpack-stats-plugin": "^0.3.2",
+    "@types/react": "^17.0.45",
+    "rimraf": "^3.0.2",
     "typescript": "^4.7.2"
-  },
-  "peerDependencies": {
-    "react": ">=18.1.0",
-    "react-dom": ">=18.1.0"
   }
 }

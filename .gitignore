@@ -1,10 +1,16 @@
 # Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
 
 # Runtime data
+pids
 *.pid
 *.seed
 *.pid.lock
@@ -28,12 +34,7 @@ bower_components
 .lock-wscript
 
 # Compiled binary addons (https://nodejs.org/api/addons.html)
-build/Release
-apps/*/client/
-apps/*/server/
-enterprise/*/client/
-enterprise/*/server/
-
+lib/
 
 # Dependency directories
 node_modules/
@@ -57,9 +58,6 @@ jspm_packages/
 # dotenv environment variables file
 .env
 
-# next.js build output
-.next
-
 # OS X temporary files
 .DS_Store
 
@@ -78,5 +76,35 @@ common/autoinstallers/*/.npmrc
 #Heft
 .heft/
 temp/
-lib/
 
+#ReScript
+bs
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# VSCode launch configs
+!examples/*/.vscode/
+!templates/*/.vscode/
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# User localdev package
+packages/localdev
+
+.DS_Store
+
+temp
+snow-devil
+artifacts
+
+yarn.lock
+!/yarn.lock
