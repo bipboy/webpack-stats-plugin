@@ -1,6 +1,6 @@
 {
   //fonts
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "Cascadia Code",
   "editor.fontLigatures": true,
   // Controls the rendering size of tabs in characters.
   "editor.tabSize": 2,
@@ -47,9 +47,7 @@
     "**/.yarn": true,
     "**/.pnp.*": true
   },
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "eslint.workingDirectories": [
     {
       "mode": "auto"
