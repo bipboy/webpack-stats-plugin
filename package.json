@@ -1,6 +1,6 @@
 {
   "name": "@bipboys/webpack-stats-plugin",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "Stats resolver function for Webpack",
   "keywords": [
     "plugin",
@@ -45,15 +45,15 @@
   },
   "dependencies": {
     "jsonfile": "^6.1.0",
-    "tslib": "^2.4.1"
+    "tslib": "^2.5.0"
   },
   "devDependencies": {
-    "@swc/cli": "^0.1.59",
-    "@swc/core": "^1.3.24",
-    "@types/jsonfile": "^6.1.0",
-    "@types/node": "^18.11.18",
-    "@types/react": "^18.0.26",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.9.4"
+    "@swc/cli": "^0.1.62",
+    "@swc/core": "^1.3.38",
+    "@types/jsonfile": "^6.1.1",
+    "@types/node": "^18.14.6",
+    "@types/react": "^18.0.28",
+    "rimraf": "^4.3.1",
+    "typescript": "^4.9.5"
   }
 }
